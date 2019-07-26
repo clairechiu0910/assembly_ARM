@@ -1,0 +1,11 @@
+Q1:請描述自己安裝與執行ARM software development tool的過程
+到網站上下載32bits的檔案，下載完後開terminal用tar -zxvf解壓縮，把網路上的hw1.s, sample.c打好後，丟到bin裡面，PPT裡面所有的指令前面加上./執行。
+
+Q2:請說明hw1.o與hw1.exe的差別?
+hw1.exe是cross compiler編譯後，可以直接執行的執行檔，
+hw1.o是cross assembler組譯後，等待cross compiler編譯的目標檔。在編譯的時候，可以自己編譯，也可以連同其他程式一起編譯。所以在有需要用到副程式的時候，會組譯成.o檔，再一起編譯成.exe檔。這樣在要更改程式的時候也比較方便，只要改.o檔聯結到的.s檔，組譯成.o檔，再和其他的.o檔編譯成.exe檔就好了。
+
+Q3:sample_O0.o與sample_O3.o檔案大小的差別?
+sample_O0.o: 748bytes
+sample_O3.o: 664bytes
+因為O3有作最大最佳化效能

@@ -1,0 +1,1 @@
+用arm-elf-insight開啟hw2.s並執行。 執行程式時，Taeget選擇Stimulator。 可以在Register視窗裡改r0~r4的值，最終執行到nop時，r7 的值會等於 r0 + r1 + r2 + r3 + r4

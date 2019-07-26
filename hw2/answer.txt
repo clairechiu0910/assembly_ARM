@@ -1,0 +1,20 @@
+1.Which rows are assembler directives?
+	.section	.rodata
+	.align 2
+	.ascii "number = %d\n\000"
+	.text
+	.global main
+	.type main, %function
+	.size main, .-main
+	.ident "GCC: (GNU) 3.3.6"
+
+2.Which rows are labels?
+	.LC0:
+	main:
+	.L3:
+	.L2:
+	.word .LC0	
+
+3.Which rows are comments?
+	@ args = 0, pretend = 0, frame = 8
+	@ frame_needed = 1, uses_anonymous_args = 0

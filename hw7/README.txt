@@ -1,0 +1,1 @@
+在C裏面先OPEN input.txt, 再把每次讀進去的字元傳到用組語寫的trans去轉換，如果是在a-z中間的字元就轉換成大寫，再傳回到C裏面寫到output.txt裏面。在trans裏面要先存callee saved register，在傳回C裏面之前，再把register本來的值存回到register裏面。因為已經寫好Makefile, 所以只要再輸入make就可以編譯。執行的時候用arm-elf-run執行hw7.exe就會輸出把小寫轉成大寫的output.txt
